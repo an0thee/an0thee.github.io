@@ -5,33 +5,20 @@
 	<title> HELLO </title>
 </head>
 <body>
-  <p>test</p>
-  <script type="text/javascript">// <![CDATA[
- day = new Date(); hour = day.getHours(); if (hour>=5 && hour<12) greeting = "Доброе утро"; else { if (hour>=12 && hour<18) greeting = "Добрый день"; else { if (hour>=18 && hour<24) greeting = "Добрый вечер"; else { if (hour>=0 && hour<5) greeting = "Доброй ночи"; } } } document.write(greeting);
-// ]]&gt;
-// ]]&gt;
-// ]]&gt;
-// ]]&gt;
-// ]]&gt;
-// ]]></script>
-!  Сегодня
-<script type="text/javascript">// <![CDATA[
-// <![CDATA[
-var d = new Date();
+	<script type="text/javascript">  
+		setInterval(function () {  
+			date = new Date(),  
+			h = date.getHours(),  
+			m = date.getMinutes(),  
+			s = date.getSeconds(),  
+			h = (h < 10) ? '0' + h : h,  
+			m = (m < 10) ? '0' + m : m,  
+			s = (s < 10) ? '0' + s : s,  
+			document.getElementById('time').innerHTML = h + ':' + m + ':' + s;  
+		}, 1000);
+	</script>
+	<span id="time">00:00:00</span>
+</span>
 
-var day=new Array("Воскресенье","Понедельник","Вторник",
-"Среда","Четверг","Пятница","Суббота");
-
-var month=new Array("января","февраля","марта","апреля","мая","июня",
-"июля","августа","сентября","октября","ноября","декабря");
-
-document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]
-+ " " + d.getFullYear() + " г.");
-// ]]&gt;
-// ]]&gt;
-// ]]&gt;
-// ]]&gt;
-// ]]&gt;
-// ]]></script>
 </body>
 </html>
