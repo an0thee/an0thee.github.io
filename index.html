@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> HELLO </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/1.js" type="text/javascript"></script>
+</head>
+<body>
+	<script type="text/javascript">  
+		setInterval(function () {  
+			date = new Date(),  
+			h = date.getHours(),  
+			m = date.getMinutes(),  
+			s = date.getSeconds(),  
+			h = (h < 10) ? '0' + h : h,  
+			m = (m < 10) ? '0' + m : m,  
+			s = (s < 10) ? '0' + s : s,  
+			document.getElementById('time').innerHTML = h + ':' + m + ':' + s;  
+		}, 1000);
+	</script>
+	<span id="time">00:00:00</span>
+</span><br>
+
+<div class="js--audio-wrap">
+	<div>Аудиозапись</div>
+	<audio class="js--audio-cont">
+		<source src="media/music.mp3" type="audio/mp3">
+			Тег audio не поддерживается вашим браузером.
+			<a href="media/music.mp3">Скачайте музыку</a>.	 
+		</audio>
+		<a href="#" class="js--audio-play" >
+			<span class="glyphicon glyphicon-play" data-toggle-class="glyphicon glyphicon-pause"></span>
+		</a>
+		<div class="js--timeline">
+			<a href="#" class="js--timeline-control"></a>
+		</div>
+		<a href="#" class="js--audio-mute">
+			<span class="glyphicon glyphicon-volume-up" data-toggle-class="glyphicon glyphicon-volume-off"></span>
+		</a>
+		</div< 
+
+	</body>
+</html>
