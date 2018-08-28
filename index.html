@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title> HELLO </title>
+	 <link rel="stylesheet" type="text/css" href="style-media.css" >
 </head>
 <body>
 	<script type="text/javascript">  
@@ -18,7 +19,18 @@
 		}, 1000);
 	</script>
 	<span id="time">00:00:00</span>
-</span>
+</span><br>
+
+<audio id="music" preload="true">
+	<source src="media/WhiteChristmas.mp3" />
+	Тут информация или код для браузеров не поддерживающих html5
+</audio>
+<div id="audioplayer">
+	<button id="pButton" class="play"></button>
+	<div id="timeline">    
+		<div id="playhead"></div>
+	</div>
+</div>
 
 </body>
 </html>
