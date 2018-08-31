@@ -1,0 +1,11 @@
+#soundMute {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(http://i.imgur.com/sDyhzo8.png);
+}
+#soundMute.muted {
+  background-image: url(http://i.imgur.com/ZFs9DuC.png);
+}
