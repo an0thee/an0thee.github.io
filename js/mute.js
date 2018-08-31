@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var track = document.querySelector('audio');
-	track.volume = 0.3
+	track.volume = 0.45
   track.play()
 });
 $('#soundMute').on('click', function(){
